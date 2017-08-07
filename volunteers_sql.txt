@@ -23,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kakushin`
+-- Table structure for table `volunteers`
 --
 
-CREATE TABLE `kakushin` (
+CREATE TABLE `volunteers` (
   `volunteer_id` bigint(20) NOT NULL,
   `address` varchar(255) NOT NULL,
   `city` varchar(255) NOT NULL,
@@ -43,10 +43,10 @@ CREATE TABLE `kakushin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kakushin`
+-- Dumping data for table `volunteers`
 --
 
-INSERT INTO `kakushin` (`volunteer_id`, `address`, `city`, `contact_no`, `email`, `name`, `no_of_event_alloted`, `no_of_event_attended`, `password`, `satisfaction`, `skill1`, `skill2`, `is_free`) VALUES
+INSERT INTO `volunteers` (`volunteer_id`, `address`, `city`, `contact_no`, `email`, `name`, `no_of_event_alloted`, `no_of_event_attended`, `password`, `satisfaction`, `skill1`, `skill2`, `is_free`) VALUES
 (1, 'vidyavihar', 'delhi', '9899999', 'pr7prashant@gmail.com', 'Prashant', 5, 4, 'aaa', 7, 'football', 'writing', 0),
 (2, 'kurla', 'mumbai', '9895599', 'neel@gmail.com', 'Neel', 7, 6, 'aaa', 8, 'dancing', 'swimming', 0),
 (3, 'sion', 'mumbai', '9899922', 'akshay@gmail.com', 'Akshay', 3, 1, 'aaa', 5, 'reading', 'teaching', 0),
@@ -73,9 +73,9 @@ INSERT INTO `kakushin` (`volunteer_id`, `address`, `city`, `contact_no`, `email`
 --
 
 --
--- Indexes for table `kakushin`
+-- Indexes for table `volunteers`
 --
-ALTER TABLE `kakushin`
+ALTER TABLE `volunteers`
   ADD PRIMARY KEY (`volunteer_id`);
 
 --
@@ -83,9 +83,9 @@ ALTER TABLE `kakushin`
 --
 
 --
--- AUTO_INCREMENT for table `kakushin`
+-- AUTO_INCREMENT for table `volunteers`
 --
-ALTER TABLE `kakushin`
+ALTER TABLE `volunteers`
   MODIFY `volunteer_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
